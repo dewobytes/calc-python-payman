@@ -19,14 +19,11 @@ display = tk.Entry(
 )
 display.pack(fill="x", padx=15, pady=20, ipady=20)
 
-
 def click(value):
     display.insert(tk.END, value)
 
-
 def clear():
     display.delete(0, tk.END)
-
 
 def delete():
     current = display.get()
@@ -40,7 +37,7 @@ def calculate():
         result = eval(expression, {"__builtins__": {}}, {})
 
         payment = messagebox.askokcancel(
-            "PAYMAN!",
+            "PAYMAN N!",
             "SELESAIKAN PEMBAYARAN KREDIT UNTUK MELIHAT HASIL 💳\n\n"
             "Klik OK Jika sudah membayar."
         )
